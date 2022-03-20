@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <title>Tarjetas</title>
+
+</head>
+<body>
+<header>
+    <div class="top">
+    <p>Descuento 20%</p>
+    </div>
+    <div class="down">
+        <h1>Card Super Heroes</h1>
+    </div> 
+</header>
+<main>
+    <div class="maslateral">+</div>
+    <!--Crear un section con article-->
+    <section>
+        <article>
+            <!--crear un div con dos clases una general bg-card que nos servira para darle medidas,border y
+                 otra clase correspondiente al personaje, nos permitira colocar el dondo del personahe-->
+            <div class="bg-card Batman">
+            <!--con fontawesome colocamos un icon con style lo tratamos ccmo un caracter,dandole color, tamaño y padding-->    
+                <i class="fas fa-heart"></i>
+            </div>
+            <!--al article le dimos position relative, a la img del personaje le dimos positio absolute y la colocamos, usando la funcion
+            calc()en el centro, mitad encima del fondo-->
+           <img src="img/Batman.png" class="personaje" alt="Batman">
+           <!--al article fuimos agregando h,p, button, no hubo que darle alto, ya que al ser un elemento de bloque 
+             tomara el alto de su contenido-->
+           <h4>batman</h4>
+           <p>
+             Batman (conocido inicialmente como Bat-Man) es un personaje creado
+             por los estadounidenses Bob Kane y Bill Finger, y propiedad de DC
+             Comics. Apareció por primera vez en la historia titulada «El caso
+             del sindicato químico» de la revista Detective Comics N.º 27,
+             lanzada por la editorial National Publications el 30/3/1939.
+           </p>
+           <button>Ver Mas</button>
+
+        </article>
+
+        <article>
+            <!--repetimos lo mismo para todas las cards, cambiandole unicamente el nombre de la segunda clase de 
+            este div para que el fondo corresponda con el del personaje-->
+            <div class="bg-card mujerMaravilla">
+                <i class="fas fa-heartbeat"></i>
+            </div>
+            <!--traemos la imag del personaje correspondiente-->
+           <img src="img/mujerMaravilla.png" class="personaje" alt="mujerMaravilla">
+           <h4>Mujer Maravilla</h4>
+           <p>
+            Es una superheroína creada por William Moulton Marston para la 
+            editorial DC Comics. Es una princesa guerrera de las Amazonas, 
+            pueblo ficticio basado en el de las amazonas de la mitología griega. 
+            En su tierra natal es conocida como
+            la princesa Diana de Temiscira pero fuera de esta utiliza
+            la identidad secreta de Diana Prince. 
+           </p>
+           <button>Ver Mas</button>
+
+        </article>
+
+        <article>
+             <!--repetimos lo mismo para todas las cards, cambiandole unicamente el nombre de la segunda clase de 
+            este div para que el fondo corresponda con el del personaje-->
+            <div class="bg-card superMan">
+                <i class="fas fa-heart"></i>
+            </div>
+            <!--traemos la img correspondiente al personaje-->
+           <img src="img/superMan.png" class="personaje" alt="superman">
+           <h4>Superman</h4>
+           <p>
+            Es un superhéroe que apareció por primera vez en los cómics e
+            stadounidenses publicados por DC Comics. ​
+            El personaje fue creado por el escritor 
+            estadounidense Jerry Siegel y el artista 
+            canadiense Joe Shuster en 1933 cuando ambos 
+            se encontraban viviendo en Cleveland, Ohio.
+           </p>
+           <!--le dimos clase al button para poder ubicarlo a al altura de los demoa botonos-->
+           <button class="buttonSuperman">Ver Mas</button>
+
+        </article>
+        <!--agregamos una clase al div ya que nos servira para referenciarlo en las @media
+             para que desaparezca en las pantallas mobile (max-width 730)-->
+        <article class="harley">
+        <!--repetimos lo mismo para todas las cards, cambiandole unicamente el nombre de la segunda clase de 
+        este div para que el fondo corresponda con el del personaje-->
+            <div class="bg-card harley">
+                <i class="fas fa-heart"></i>
+            </div>
+        <!--traemos la imagen del personaje correspondiente-->    
+           <img src="img/harley.png" class="personaje" alt="harley">
+           <h4>Harley Quinn</h4>
+           <p>
+            Harley Quinn es un personaje ficticio creado por 
+            los estadounidenses Paul Dini y Bruce Timm para 
+            la editorial DC Comics. Quinn hizo su debut en el
+             vigésimo-segundo episodio de Batman: la serie animada,
+             «El favor del Joker», en septiembre de 1992 y se convirtió 
+             en una villana recurrente en la serie
+           </p>
+           <button class="buttonHarley">Ver Mas</button>
+
+        </article>
+      
+    </section>
+   
+</main>
+<!--al footer le dimos una posicion relativa para darle a la img una posicion absoluta
+     y ubicarla hacia el margen derecho-->
+<!--al footer tambien le dimos la propiedad flex y ubicamos el texto en el centro -->
+
+<footer>
+    <p>Todos los derechos reservados a <span>frontend 1</span></p>
+    <img src="img/gitHub.png" alt="" />
+  </footer>
+</body>
+</html>
